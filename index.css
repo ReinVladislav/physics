@@ -1,0 +1,155 @@
+body {
+	overflow-x: hidden;
+}
+
+/*
+.headerWrapper {
+	background-color: lavender;
+}
+*/
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+header {
+	background-color: lavender;
+	margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 70px;
+	position: fixed;
+}
+
+.fstPart {
+	display: flex;
+}
+
+div.sdPart {
+	display: flex;
+	justify-content: space-between;
+	width: 700px;
+}
+
+.firsta {
+	color: black;
+}
+
+.thrdPart {
+	display: flex;
+	width: 130px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.thrdPart img {
+	height: 45px;
+
+}
+
+.auth {
+	display: flex;
+	flex-direction: column;
+}
+
+a.login {
+	color: black;
+	font-weight: 600
+}
+
+a.register {
+	font-size: 12px;
+}
+
+.m1 {
+	width: 100%;
+	/* или любую другую нужную вам ширину */
+	height: 700px;
+	/* или любую другую нужную вам высоту */
+	background-image: url('assets/miniMen.webp');
+	background-size: cover;
+	/* это свойство масштабирует изображение, чтобы оно покрывало весь блок */
+	background-position: center;
+	/* это свойство позиционирует изображение по центру блока */
+}
+
+
+.hello {
+
+	padding: 30px;
+	background-color: rgba(148, 63, 256, 0.7);
+	margin-left: 60%;
+	border-radius: 15px;
+}
+
+.wrapper {
+	width: 80%;
+}
+
+.w1 {
+	padding-top: 15%;
+}
+
+button {
+	background-color: #4B0082;
+	color: white;
+	padding: 15px 32px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, box-shadow 0.3s;
+	display: block; 
+  	margin: 20px auto 0 auto;
+}
+
+button:hover {
+	background-color: #4B1070;
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.m2 {
+	background-color: #1d1d36;
+}
+
+.m2-p {
+	text-align: center; 
+	display: block; 
+	margin: auto; 
+	padding:  30px 18%;
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.m3 {
+	background-color: #90918c;
+	height: 500px;
+}
+
+.m3-info {
+	padding: 20px 20%;
+
+}
+
+.ao {
+	max-width: 230px;
+	border-radius: 20px;
+	border: 1px solid #1a5ea5;
+
+}
+
+.m3-info-ex {
+	margin-top: 20px;
+	display: flex;
+	
+}
+
+.m3-text {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
