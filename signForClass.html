@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Kureev</title>
 	<link rel="stylesheet" type="text/css" href="footer.css">
 	<link rel="stylesheet" type="text/css" href="signForClass.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
+
 <body>
 	<header>
 
-			<div class="fstPart">
-				<img src="assets/logo.png" alt="">
+		<div class="fstPart">
+			<img src="assets/logo.png" alt="">
+		</div>
+
+		<div class="sdPart">
+			<a class="firsta" href="index.html">Главная страница</a>
+			<a href="signForClass.html">Записаться на занятие</a>
+			<a href="#">Сборник задач ОГЭ</a>
+			<a href="#">Сборник задач ОГЭ</a>
+		</div>
+
+		<div class="thrdPart">
+
+			<img src="assets/avatar.png" alt="login">
+			<div class="auth">
+				<a href="#" class="login">Войти</a>
+				<a href="#" class="register">Регистрация</a>
 			</div>
 
-			<div class="sdPart">
-				<a class="firsta" href="index.html">Главная страница</a>
-				<a href="signForClass.html">Записаться на занятие</a>
-				<a href="#">Сборник задач ОГЭ</a>
-				<a href="#">Сборник задач ОГЭ</a>
-			</div>
-
-			<div class="thrdPart">
-
-				<img src="assets/avatar.png" alt="login">
-				<div class="auth">
-					<a href="#" class="login">Войти</a>
-					<a href="#" class="register">Регистрация</a>
+		</div>
+	</header>
+	<main>
+		<div class="reg">
+			<form action="">
+				<div class="form-group">
+					<!--
+					<h2>Регистрация</h2>
+					<label for="fio">ФИО</label>
+					<input type="text" id="fio" name="fio" required>
+					<div class="add">
+						
+					</div>
+					<label for="regNumber">Номер телефона:</label>
+					<input type="text" id="regNumber" name="regNumber" required>
+					<div class="">
+						<label for="gender">Класс:</label>
+						<select id="gender" name="gender">
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+						</select>
+					</div>
+					<label for="regPassword">Придумайте пароль:</label>
+					<input type="password" id="regPassword" name="regPassword">
+					<label for="regPassword1">Подтвердите пароль:</label>
+					<input type="password" id="regPassword1" name="regPassword1">
+					<button>Зарегистрироваться</button>
+					<a href="" style="margin: 20px 10px;">Я уже зарегистрирован</a>
+-->
+					<h2>Вход</h2>
+					<label for="number">Номер телефона:</label>
+					<input type="text" id="number" name="number" required>
+					<label for="password">Пароль:</label>
+					<input type="password" id="password" name="password">
+					<button>Войти</button>
+					<a href="" style="margin: 20px 10px;">У меня нет аккаунта</a>
 				</div>
-
+			</form>
+		</div>
+	</main>
+	<footer class="footer">
+		<div>
+			<h5>О компании</h5>
+			<p>После прохождения наших курсов знания остаются с ребенком на всю жизнь.</p>
+		</div>
+		<div>
+			<h5>Контакты</h5>
+			<ul>
+				<li>Адрес: ул. Примерная, 123, Волгоград, Россия</li>
+				<li>Телефон: +7 (123) 456-78-90</li>
+				<li>Email: info@example.com</li>
+			</ul>
+		</div>
+		<div>
+			<h5>Следите за нами</h5>
+			<div class="social-icons">
+				<a href="https://vk.com/kureevphysics"><img src="assets/vk.png" alt="VK"></a>
+				<a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
 			</div>
-		</header>
+		</div>
+
+	</footer>
 </body>
+
 </html>

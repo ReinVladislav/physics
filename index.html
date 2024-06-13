@@ -8,12 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="footer.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="" href="header.css">
+	<script src="index.js"></script>
 	<meta charset="UTF-8">
 	<title>Kureev</title>
 </head>
 
 
 <body>
+	
 	<div class="headerWrapper">
 		<header>
 
@@ -24,7 +27,7 @@
 			<div class="sdPart">
 				<a class="firsta" href="index.html">Главная страница</a>
 				<a href="signForClass.html">Записаться на занятие</a>
-				<a href="#">Сборник задач ОГЭ</a>
+				<a href="#">Сборник задач EГЭ</a>
 				<a href="#">Сборник задач ОГЭ</a>
 			</div>
 
@@ -32,8 +35,8 @@
 
 				<img src="assets/avatar.png" alt="login">
 				<div class="auth">
-					<a href="#" class="login">Войти</a>
-					<a href="#" class="register">Регистрация</a>
+					<a href="signForClass.html" class="login">Войти</a>
+					<a href="signForClass.html" class="register">Регистрация</a>
 				</div>
 
 			</div>
@@ -48,7 +51,7 @@
 					<h1 style="text-align: center;  color: white; font-weight: 600">Школа точных наук</h1>
 					<p style="text-align: center;  color: white;">Обучаем школьников 5-11 классов по авторским методикам на базе советских учебников.</p>
 					<p style="text-align: center;  color: white;">Онлайн, оффлайн, индивидуально или в группе.</p>
-					<button>Записаться</button>
+					<button id="scrollButton">Записаться</button>
 				</div>
 			</div>
 		</div>
@@ -69,6 +72,30 @@
 						</p>
 					</div>
 				</div>
+			</div>
+
+		</div>
+		<div class="m33">
+			<div class="m3-info-2">
+				<h1 style="text-align: center; color: aliceblue">Зачем мы создали
+					Школу точных наук ?</h1>
+				<p style="margin-top: 30px; color: aliceblue; text-align: center;">Мир идет по пути интенсивной диджитализации, весь вопрос в технологиях и материалах. Прежде всего это компьютеры, транспорт, бытовая техника и наноэлектроника. Если раньше ученики и студенты не знали, как применять полученные знания, то теперь это острая необходимость. После прохождения наших курсов знания остаются с ребенком на всю жизнь.</p>
+			</div>
+		</div>
+		<div class="familiarity">
+			<h1 style="color: #1d1d36; margin-bottom: 30px">Как проходят занятия в нашей школе?</h1>
+			<div class="row13">
+				<p class="row2p1">Мы создаем среду единомышленников разных возрастов, поэтому дети общаются друг с другом, делятся опытом, помогают друг другу</p>
+				<p class="row2p2">Ни в одной государственной школе нет столько практических способов закрепления материала</p>
+			</div>
+			<div class="row2">
+				<p class="row2p1">Ученик сравнивает себя только с собой</p>
+				<img src="assets/school.png" style="width: 250px; margin-bottom: 30px" alt="">
+				<p class="row2p2">Упор идет на понимание и усвоение материала, а не на оценки</p>
+			</div>
+			<div class="row13">
+				<p class="row2p1">Преподаватели всегда на связи, чтобы помочь с домашним заданием</p>
+				<p class="row2p2">Темп изучения всегда адаптируется под особенности восприятия каждого ребенка</p>
 			</div>
 		</div>
 		<div class="m4">
@@ -116,6 +143,82 @@
 					</div>
 				</div>
 			</div>
+
+		</div>
+		<div class="rates">
+			<h1>Тарифы Индивидуальных занятий</h1>
+			<div class="rate1">
+				<div class="rate">
+					<h3>Математика</h3>
+					<h2>2100 руб.</h2>
+					<div class="rete-row">
+						<img src="assets/book.png" alt="">
+						<p>1 занятие</p>
+					</div>
+					<div class="rete-row">
+						<img src="assets/clock.png" alt="">
+						<p>90 мин.</p>
+					</div>
+					<button id="scrollButton1">Записаться</button>
+				</div>
+				<div class="rate">
+					<h3>Физика</h3>
+					<h2>2100 руб.</h2>
+					<div class="rete-row">
+						<img src="assets/book.png" alt="">
+						<p>1 занятие</p>
+					</div>
+					<div class="rete-row">
+						<img src="assets/clock.png" alt="">
+						<p>90 мин.</p>
+					</div>
+					<button id="scrollButton2">Записаться</button>
+				</div>
+				<div class="rate">
+					<h3>Физика по программе IB</h3>
+					<h2>5000 руб.</h2>
+					<div class="rete-row">
+						<img src="assets/book.png" alt="">
+						<p>1 занятие</p>
+					</div>
+					<div class="rete-row">
+						<img src="assets/clock.png" alt="">
+						<p>90 мин.</p>
+					</div>
+					<button id="scrollButton3">Записаться</button>
+				</div>
+
+			</div>
+			<h1>Тарифы групповых занятий</h1>
+			<div class="rate2">
+				<div class="rate">
+					<h3>Абонемент Физика</h3>
+					<h2>6400 руб.мес.</h2>
+					<div class="rete-row">
+						<img src="assets/book.png" alt="">
+						<p>8 занятий</p>
+					</div>
+					<div class="rete-row">
+						<img src="assets/clock.png" alt="">
+						<p>90 мин.</p>
+					</div>
+					<button id="scrollButton4">Записаться</button>
+				</div>
+				<div class="rate">
+					<h3>Абонемент Математика</h3>
+					<h2>6400 руб.мес.</h2>
+					<div class="rete-row">
+						<img src="assets/book.png" alt="">
+						<p>8 занятий</p>
+					</div>
+					<div class="rete-row">
+						<img src="assets/clock.png" alt="">
+						<p>90 мин.</p>
+					</div>
+					<button id="scrollButton5">Записаться</button>
+				</div>
+			</div>
+
 
 		</div>
 		<div class="reviews">
@@ -215,7 +318,60 @@
 					</div>
 				</div>
 			</div>
-			<div class="revLink"><a href="https://vk.com/topic-205910509_48406498">Больше отзывов в VK</a></div>
+			<div class="revLink" id="form-section"><a href="https://vk.com/topic-205910509_48406498">Больше отзывов в VK</a></div>
+		</div>
+		<div class="record" >
+
+			<h1 style="text-align: center; padding: 30px;">Записаться на занятие</h1>
+			<p style="text-align: center;">Оставьте заявку и мы свяжимся с вами в ближайшее время</p>
+
+
+			<form action="/submit" method="post" >
+				<div class="form-group">
+					<label for="name">ФИО:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="tel">Номер телефона:</label>
+					<input type="tel" id="phone" name="phone" pattern="\+?\d{0,15}" required>
+				</div>
+
+				<div class="form-group">
+					<label for="gender">Как удобнее связаться:</label>
+					<select id="gender" name="gender">
+						<option value="Phone">Телефонный звонок</option>
+						<option value="Telegram">Telegram</option>
+						<option value="WhatsApp">WhatsApp</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="gender">Тариф:</label>
+					<select id="gender" name="gender">
+						<option value="ind Physic">Индивидуальные занятия по физике</option>
+						<option value="ind Math">Индивидуальные занятия по математике</option>
+						<option value="ind PhysicIB">Индивидуальные занятия по физике по программе IB</option>
+						<option value="group Physic">Групповые занятия по физике</option>
+						<option value="group Math">Групповые занятия по математике</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="gender">Класс:</label>
+					<select id="gender" name="gender">
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+
+					</select>
+				</div>
+
+				<div class="form-group">
+					<button type="submit">Отправить</button>
+				</div>
+			</form>
 		</div>
 	</main>
 
@@ -241,7 +397,6 @@
 		</div>
 
 	</footer>
-
 </body>
 
 </html>

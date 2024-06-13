@@ -12,12 +12,10 @@ header {
 	align-items: center;
 	height: 70px;
 	position: fixed;
+	top: 0;
 }
 
-.main {
-	width: 100%;
 
-}
 
 .fstPart {
 	display: flex;

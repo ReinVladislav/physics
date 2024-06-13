@@ -79,11 +79,12 @@ button:hover {
 	background-color: #90918c;
 	height: 450px;
 	display: flex;
+	flex-direction: column
 }
 
 .m3-info {
 	width: 1000px;
-	margin: auto;
+	margin: 50px auto;
 	display: flex;
 	flex-direction: column;
 }
@@ -99,7 +100,16 @@ button:hover {
 h1 {
 	font-weight: 600
 }
-
+.m3-info-2{
+	width: 1000px;
+	margin: auto;
+	padding: 40px; 
+}
+.m33{
+	background-color: #1d1d36;
+	height: 280px
+		
+}
 .m3-info-ex {
 	margin-top: 30px;
 	display: flex;
@@ -115,6 +125,63 @@ h1 {
 	margin-left: 40px;
 }
 
+.rates {
+	height: 1000px;
+	background-color: rgba(0, 0, 255, .2);
+	display: flex;
+	flex-direction: column;
+	
+}
+.rate1{
+	display: flex;
+	width: 1000px;
+	margin: auto;
+	padding-top: 20px;
+}
+.rate{
+	border: 3px solid black;
+	border-radius: 30px;
+	width: 300px;
+	height: 350px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 12px 12px 2px 1px #4b4da5;
+}
+
+.rate:hover {
+	background-color: rgba(0.1, 0.1, 0.1, 0.1);
+	box-shadow: 15px 15px 3px 2px #4b4da5;
+}
+.rate h3 {
+	height: 70px;
+	align-content: center;
+}
+.rate h2 {
+	margin: 20px 0px;
+}
+.rate2 {
+	display: flex;
+	width: 700px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.rete-row{
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.rates h1 {
+	text-align: center;
+	padding-top: 30px;
+}
+.rate img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
 .reviews {
 	padding: 20px 12%;
 	height: 1600px;
@@ -203,7 +270,7 @@ h1 {
 
 .m4-1 {
 	display: flex;
-	width: 50%;
+	width: 60%;
 	margin-top: 20px;
 	align-items: center;
 }
@@ -211,7 +278,7 @@ h1 {
 .m4-2 {
 	display: flex;
 	width: 60%;
-	margin: 10px 0px 0px auto;
+	margin: 20px 0px 0px 50%;
 	align-items: center;
 }
 
@@ -227,11 +294,10 @@ h1 {
 }
 
 .m5 {
-	height: 800px;
-	padding: 10px;
+	height: 720px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	padding-top: 30px;
 }
 
 .m5-row {
@@ -239,7 +305,7 @@ h1 {
 	justify-content: space-between;
 	margin-top: 50px;
 	width: 1400px;
-	margin: 50px auto 0;
+	margin: 40px auto;
 }
 
 .imgCont img {
@@ -263,7 +329,74 @@ h1 {
 	text-align: center;
 	margin-top: 30px
 }
+.main {
+	width: 100%;
 
+}
+
+form {
+    max-width: 600px;
+    margin: 10px auto 40px;
+    padding: 1em;
+    background-color: #e5e2df;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.familiarity {
+	padding: 30px;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	color: #9966cc;
+	font-size: 17px;
+	font-weight: 600;
+	background-color: #e8e6ed;
+	text-align: center;
+}
+.row13{
+	display: flex;
+	width: 700px;
+	margin: auto
+}
+
+.familiarity .row2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1000px;
+	margin: 40px auto;
+}
+.row2p1{
+	width: 250px;
+	margin: 0px auto 0px 0px;
+	
+}
+.row2p2{
+	width: 250px;
+	margin: 0px 0px 0px auto;
+}
 @media screen and (max-width: 1300px) {
 
 	.rev-text {
