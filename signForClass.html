@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="signForClass.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -28,8 +29,8 @@
 
 			<img src="assets/avatar.png" alt="login">
 			<div class="auth">
-				<a href="#" class="login">Войти</a>
-				<a href="#" class="register">Регистрация</a>
+				<a href="#" id="goToSign" class="login">Войти</a>
+				<a href="#" id="goToReg" class="register">Регистрация</a>
 			</div>
 
 		</div>
@@ -37,42 +38,8 @@
 	<main>
 		<div class="reg">
 			<form action="">
-				<div class="form-group">
-					<!--
-					<h2>Регистрация</h2>
-					<label for="fio">ФИО</label>
-					<input type="text" id="fio" name="fio" required>
-					<div class="add">
-						
-					</div>
-					<label for="regNumber">Номер телефона:</label>
-					<input type="text" id="regNumber" name="regNumber" required>
-					<div class="">
-						<label for="gender">Класс:</label>
-						<select id="gender" name="gender">
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-						</select>
-					</div>
-					<label for="regPassword">Придумайте пароль:</label>
-					<input type="password" id="regPassword" name="regPassword">
-					<label for="regPassword1">Подтвердите пароль:</label>
-					<input type="password" id="regPassword1" name="regPassword1">
-					<button>Зарегистрироваться</button>
-					<a href="" style="margin: 20px 10px;">Я уже зарегистрирован</a>
--->
-					<h2>Вход</h2>
-					<label for="number">Номер телефона:</label>
-					<input type="text" id="number" name="number" required>
-					<label for="password">Пароль:</label>
-					<input type="password" id="password" name="password">
-					<button>Войти</button>
-					<a href="" style="margin: 20px 10px;">У меня нет аккаунта</a>
+				<div class="form-group" id="form-group">
+					
 				</div>
 			</form>
 		</div>
@@ -99,6 +66,7 @@
 		</div>
 
 	</footer>
+	<script src="sing.js" defer></script>
 </body>
 
 </html>

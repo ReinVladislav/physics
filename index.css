@@ -334,7 +334,7 @@ h1 {
 
 }
 
-form {
+.form {
     max-width: 600px;
     margin: 10px auto 40px;
     padding: 1em;

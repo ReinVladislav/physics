@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="footer.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="" href="header.css">
-	
+	<script src="index.js" defer></script>
+	<script src="indexAnchor.js" defer></script>
 	<meta charset="UTF-8">
 	<title>Kureev</title>
 </head>
@@ -326,7 +327,7 @@
 			<p style="text-align: center;">Оставьте заявку и мы свяжимся с вами в ближайшее время</p>
 
 
-			<form action="/submit" method="post" >
+			<div class="form" id="recordForm">
 				<div class="form-group">
 					<label for="name">ФИО:</label>
 					<input type="text" id="name" name="name" required>
@@ -335,11 +336,10 @@
 					<label for="tel">Номер телефона:</label>
 					<input type="tel" id="phone" name="phone" pattern="\+?\d{0,15}" required>
 				</div>
-
 				<div class="form-group">
 					<label for="gender">Как удобнее связаться:</label>
 					<select id="gender" name="gender">
-						<option value="Phone">Телефонный звонок</option>
+						<option value="Телефонный звонок">Телефонный звонок</option>
 						<option value="Telegram">Telegram</option>
 						<option value="WhatsApp">WhatsApp</option>
 					</select>
@@ -347,11 +347,11 @@
 				<div class="form-group">
 					<label for="tarif">Тариф:</label>
 					<select id="tarif" name="tarif">
-						<option value="ind Physic">Индивидуальные занятия по физике</option>
-						<option value="ind Math">Индивидуальные занятия по математике</option>
-						<option value="ind PhysicIB">Индивидуальные занятия по физике по программе IB</option>
-						<option value="group Physic">Групповые занятия по физике</option>
-						<option value="group Math">Групповые занятия по математике</option>
+						<option value="Индивидуальные занятия по физике">Индивидуальные занятия по физике</option>
+						<option value="Индивидуальные занятия по математике">Индивидуальные занятия по математике</option>
+						<option value="Индивидуальные занятия по физике по программе IB">Индивидуальные занятия по физике по программе IB</option>
+						<option value="Групповые занятия по физике">Групповые занятия по физике</option>
+						<option value="Групповые занятия по математике">Групповые занятия по математике</option>
 					</select>
 				</div>
 				<div class="form-group">
@@ -364,14 +364,12 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 						<option value="11">11</option>
-
 					</select>
 				</div>
-
 				<div class="form-group">
-					<button type="submit">Отправить</button>
+					<button id="sendButton" type="submit">Отправить</button>
 				</div>
-			</form>
+			</div>
 		</div>
 	</main>
 
@@ -397,7 +395,6 @@
 		</div>
 
 	</footer>
-	<script src="index.js"></script>
 </body>
 
 </html>

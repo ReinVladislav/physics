@@ -1,42 +1,33 @@
+ const url = 'http://localhost:8084/sendMessage';
+ const sendButton = document.getElementById('sendButton');
+ 
+ 
+class RecordDto{
+    constructor(fio, phoneNumber, connectionType, rate, classNumber){
+        this.fio=fio;
+        this.phoneNumber= phoneNumber;
+        this.connectionType= connectionType;
+        this.rate= rate;
+        this.classNumber= classNumber; 
 
-
-const scrollButton = document.getElementById('scrollButton').addEventListener('click', goToRecord);
-const scrollButton1 = document.getElementById('scrollButton1').addEventListener('click', goToRecord);
-const scrollButton2 = document.getElementById('scrollButton2').addEventListener('click', goToRecord);
-const scrollButton3 = document.getElementById('scrollButton3').addEventListener('click', goToRecord);
-const scrollButton4 = document.getElementById('scrollButton4').addEventListener('click', goToRecord);
-const scrollButton5 = document.getElementById('scrollButton5').addEventListener('click', goToRecord);
-var tarif;
-
-
-function goToRecord(){
-	document.getElementById('form-section').scrollIntoView({behavior: 'smooth'});
-	choosTatif(this)
-	console.log(tarif)
-	document.getElementById('tarif').value = tarif;
+    }
 }
 
 
+ sendButton.onclick = async function() {
+    let fio = document.getElementById('name').value;
+    let phoneNumber = document.getElementById('phone').value;
+    let connectionType = document.getElementById('gender').value;
+    let rate = document.getElementById('tarif').value;
+    let classNumber = document.getElementById('class').value;
 
-function choosTatif(but){
-	switch (but.id) {
-		case 'scrollButton1':
-			tarif = 'ind Math';
-			break;
-		case 'scrollButton2':
-			tarif = 'ind Physic';
-			break;
-		case 'scrollButton3':
-			tarif = 'ind PhysicIB';
-			break;
-		case 'scrollButton4':
-			tarif = 'group Physic';
-			break;
-		case 'scrollButton5':
-			tarif = 'group Math';
-			break;
-		default:
-			tarif = 'ind Math';
-			break;
-	}
-}
+    let newRecordDto = new RecordDto(fio, phoneNumber, connectionType, rate,classNumber);
+
+    try {
+        const resp = await fetch(url,   {method: 'POST', 
+                                        headers: {'Content-Type': 'application/json;charset=utf-8'},
+                                        body: JSON.stringify(newRecordDto)}) 
+    } catch (error) {
+        console.log('Ошибка отправления');
+    }
+ }
