@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="taskEge.css">
+	<script src="taskEge.js" defer></script>
+	<meta charset="UTF-8">
+	<title>Kureev</title>
+</head>
+
+<body>
+	<header>
+
+		<div class="fstPart">
+			<img src="assets/logo.png" alt="">
+		</div>
+
+		<div class="sdPart">
+			<a class="firsta" href="index.html">Главная страница</a>
+			<a href="#">Сборник задач EГЭ</a>
+			<a href="#">Сборник задач ОГЭ</a>
+		</div>
+
+		<div class="thrdPart">
+
+			<img src="assets/avatar.png" alt="login">
+			<div class="auth">
+				<a href="signForClass.html" class="login">Войти</a>
+				<a href="signForClass.html" class="register">Регистрация</a>
+			</div>
+
+		</div>
+	</header>
+	<main>
+		<div class="block1-3">
+			<h3>Сгенерировать вариант</h3>
+			<div class="form-get-var">
+				<div class="form-group">
+					<label for="class">Уровень сложности варианта:</label>
+					<select class="select-level" id="class" name="class">
+						<option value="Лёгкий">Лёгкий</option>
+						<option value="Средний">Средний</option>
+						<option value="Сложный">Сложный</option>
+					</select>
+					<label>
+						<input type="checkbox" name="languages" value="HTML">
+						Составить вариант только из задач, которые вы ещё не решали
+					</label>
+					<button id="genButton" type="submit">Отправить</button>
+				</div>
+			</div>
+		</div>
+		<div class="block2">
+			<h3>Краткий ответ</h3>
+			<div class="tasks">
+				<ol>
+					<li id="task1">Кинематика</li>
+					<li id="task2">Динамика</li>
+					<li id="task3">Законы сохранения в механике</li>
+					<li id="task4">Статика. Механические колебания и волны</li>
+					<li id="task5">Механика</li>
+					<li id="task6">Механика</li>
+					<li id="task7">Молекулярная физика</li>
+					<li id="task8">МКТ и молекулярная физика</li>
+					<li id="task9">Молекулярная физика и термодинамика</li>
+					<li id="task10">Молекулярная физика и термодинамика. Изменение физических величин</li>
+					<li id="task11">Электрическое поле. Законы постоянного тока</li>
+					<li id="task12">Магнитное поле. Электромагнитная индукция</li>
+					<li id="task13">Электромагнитные колебания и волны. Оптика</li>
+					<li id="task14">Электродинамика. Анализ физических процессов</li>
+					<li id="task15">Электродинамика. Изменение физических величин и установление соответствия</li>
+					<li id="task16">Ядерная физика</li>
+					<li id="task17">Квантовая физика. Изменение физических величин</li>
+					<li id="task18">Физический смысл величин, законов и закономерностей</li>
+					<li id="task19">Механика — квантовая физика. Показания измерительных приборов</li>
+					<li id="task20">Механика — квантовая физика. Планирование эксперимента</li>
+					</ol>
+					</div>
+					
+					</div>
+					<div class="block1-3">
+					<h3>Развёрнутый ответ</h3>
+					<div class="tasks">
+					<ol start="21">
+					<li id="task21">Молекулярная физика−электродинамика. Качественная задача</li>
+					<li id="task22">Механика (расчетная задача)</li>
+					<li id="task23">Молекулярная физика. Электродинамика (расчетная задача)</li>
+					<li id="task24">Молекулярная физика. Термодинамика (расчетная задача высокого уровня)</li>
+					<li id="task25">Электродинамика (расчетная задача высокого уровня)</li>
+					<li id="task26">Механика (расчетная задача высокого уровня с обоснованием)</li>
+					</ol>
+					</div>
+					</div>
+
+	</main>
+	<footer class="footer">
+		<div>
+			<h5>О компании</h5>
+			<p>После прохождения наших курсов знания остаются с ребенком на всю жизнь.</p>
+		</div>
+		<div>
+			<h5>Контакты</h5>
+			<ul>
+				<li>Телефон: +7 937 548 1999</li>
+				<li>Email: kureevteam@gmail.com</li>
+			</ul>
+		</div>
+		<div>
+			<h5>Следите за нами</h5>
+			<div class="social-icons">
+				<a href="https://vk.com/kureevphysics"><img src="assets/vk.png" alt="VK"></a>
+				<a href="https://www.instagram.com/kureevschool?igsh=NzRtcnVqNzhyajE0"><img src="assets/instagram.png" alt="Instagram"></a>
+			</div>
+		</div>
+
+	</footer>
+</body>
+
+</html>
